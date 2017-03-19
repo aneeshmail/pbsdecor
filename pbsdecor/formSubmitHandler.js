@@ -48,10 +48,10 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-		document.getElementById('name').text="";
-		document.getElementById('email').text="";
-		document.getElementById('subject').text="";
-		document.getElementById('message').text="";
+		document.getElementById('name').value='';
+		document.getElementById('email').value='';
+		document.getElementById('subject').value='';
+		document.getElementById('message').value='';
 		alert("We will get back to you soon.");
         return;
     };
