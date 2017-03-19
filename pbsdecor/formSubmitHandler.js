@@ -48,6 +48,11 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
+		document.getElementById('name').text="";
+		document.getElementById('email').text="";
+		document.getElementById('subject').text="";
+		document.getElementById('message').text="";
+		alert("We will get back to you soon.");
         return;
     };
     // url encode form data for sending as post data
