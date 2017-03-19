@@ -52,7 +52,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 		document.getElementById('email').value='';
 		document.getElementById('subject').value='';
 		document.getElementById('message').value='';
-		alert("We will get back to you soon.");
         return;
     };
     // url encode form data for sending as post data
